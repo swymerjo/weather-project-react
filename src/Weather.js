@@ -7,7 +7,7 @@ import Source from "./Source";
 export default function Weather() {
     let weatherData = {
       city: "Freiburg im Breisgau",
-      temperature: 19,
+      temperature: 14,
       date: "Tuesday 10:00",
       description: "Cloudy",
       humidity: 80,
