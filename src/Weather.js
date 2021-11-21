@@ -55,7 +55,7 @@ export default function Weather() {
         </form>
         <div className="overview">
           <h1>{weatherData.city}</h1>
-          <ul>
+          <ul className="description-list">
             <li>Last updated: {weatherData.date}</li>
             <li>{weatherData.description}</li>
           </ul>

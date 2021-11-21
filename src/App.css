@@ -34,7 +34,13 @@
 .Weather .overview {
   margin-bottom: 20px;
 }
-
+.Weather .description-list {
+  list-style: none;
+  padding: 0;
+}
+.Weather li {
+  list-style: none;
+}
 .Weather .weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
