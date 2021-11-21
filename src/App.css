@@ -2,7 +2,9 @@
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-  margin: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
 }
 
 .Weather .submit-button {
@@ -33,17 +35,12 @@
   margin-bottom: 20px;
 }
 
-.Weather .weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
-}
-
 .Weather .weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
+  margin-left: 10px;
 }
 
 .Weather .weather-temperature .units {
@@ -75,12 +72,7 @@
   padding-top: 7px;
 }
 
-.Weather .weather-forecast img {
-  display: block;
-  margin: 0 auto;
-  height: 48px;
-  width: 48px;
-}
+
 
 .Weather .weather-forecast-temperature {
   text-align: center;
@@ -93,6 +85,35 @@
 }
 .forecast{
   text-align: center;
+}
+.forecast-temp{
+  opacity: 0.5;
+}
+
+.source {
+  margin-left: 50px;
+  padding: 4px;
+  margin-top: 20px;
+}
+.name-link {
+  color: palevioletred;
+  font-weight: bolder;
+}
+
+.name-link:hover {
+  color: rgb(31, 212, 212);
+  font-weight: bolder;
+  text-decoration: none;
+}
+.website-link {
+  color: rgb(31, 212, 212);
+  font-weight: bolder;
+}
+
+.website-link:hover {
+  color: palevioletred;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 @media (min-width: 800px) {

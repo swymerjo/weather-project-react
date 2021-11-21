@@ -1,6 +1,8 @@
 import React from "react";
 import './App.css';
 import Forecast from "./Forecast";
+import ReactAnimatedWeather from 'react-animated-weather';
+import Source from "./Source";
 
 export default function Weather() {
     let weatherData = {
@@ -8,13 +10,13 @@ export default function Weather() {
       temperature: 19,
       date: "Tuesday 10:00",
       description: "Cloudy",
-      imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
       humidity: 80,
       wind: 10
     };
   
     return (
-      <div className="Weather">
+      <div class="app-outer">
+      <div className="Weather shadow">
           <div className="row">
           <div className="col-9 cities-top-container">
           <p>
@@ -61,17 +63,16 @@ export default function Weather() {
         <div className="row">
           <div className="col-sm-6">
             <div className="clearfix weather-temperature">
-              <img
-                src={weatherData.imgUrl}
-                alt={weatherData.description}
-                className="float-left"
-              />
-              <div className="float-left">
+              <ReactAnimatedWeather
+            icon="RAIN"
+            color="#529AFF"
+            size={50}
+            animate={true}
+          />
                 <strong>{weatherData.temperature}</strong>
                 <span className="units">
                   <a href="/">°C</a> | <a href="/">°F</a>
                 </span>
-              </div>
             </div>
           </div>
           <div className="col-sm-6">
@@ -82,6 +83,8 @@ export default function Weather() {
           </div>
         </div>
         <Forecast />
+      </div>
+      <Source />
       </div>
     );
   }
