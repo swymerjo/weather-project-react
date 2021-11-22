@@ -17,7 +17,6 @@ export default function Weather() {
     return (
       <div class="app-outer">
       <div className="Weather shadow">
-   
         <form className="mb-4">
           <div className="row">
             <div className="col-sm-6">
@@ -56,7 +55,7 @@ export default function Weather() {
           />
                 <strong>{weatherData.temperature}</strong>
                 <span className="units">
-                  <a href="/">°C</a> | <a href="/">°F</a>
+                  <a class="text-decoration-none" href="/">°C</a> | <a class="text-decoration-none" href="/">°F</a>
                 </span>
             </div>
           </div>
