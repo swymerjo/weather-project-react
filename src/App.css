@@ -24,13 +24,7 @@
   padding-right: 10px;
   margin-left: 10px;
 }
-.Weather .cities-top-container{
-  display: flex;
-  justify-content:space-between;
-  color: #529AFF;
-  font-weight: bold;
-  margin-left: 4px;
-}
+
 .Weather .overview {
   margin-bottom: 20px;
 }

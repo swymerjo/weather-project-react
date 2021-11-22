@@ -17,22 +17,7 @@ export default function Weather() {
     return (
       <div class="app-outer">
       <div className="Weather shadow">
-          <div className="row">
-          <div className="col-9 cities-top-container">
-          <p>
-              Freiburg
-            </p>
-            <p>
-              Bishop 
-            </p>
-            <p>
-              Lake Forest
-            </p>
-            <p>
-              Liverpool
-            </p>
-              </div>
-              </div>
+   
         <form className="mb-4">
           <div className="row">
             <div className="col-sm-6">
