@@ -22,8 +22,9 @@ export default function Weather() {
               <input
                 type="search"
                 placeholder="Type a city.."
-                className="form-control shadow p-3´4"
-                autoComplete="on"
+                className="form-control shadow p-2"
+                autoComplete="off"
+                autoFocus="on"
               />
             </div>
             <div className="col-sm-6">
