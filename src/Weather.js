@@ -2,7 +2,6 @@ import React from "react";
 import './App.css';
 import Forecast from "./Forecast";
 import ReactAnimatedWeather from 'react-animated-weather';
-import Source from "./Source";
 
 export default function Weather() {
     let weatherData = {
@@ -28,10 +27,10 @@ export default function Weather() {
               />
             </div>
             <div className="col-sm-6">
-             <button className= "submit-button shadow">
+             <button className= "submit-button shadow w-20">
                  Submit
              </button>
-             <button className= "current-button shadow">
+             <button className= "current-button shadow w-20">
                  Current
              </button>
             </div>
@@ -68,7 +67,6 @@ export default function Weather() {
         </div>
         <Forecast />
       </div>
-      <Source />
       </div>
     );
   }

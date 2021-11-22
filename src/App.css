@@ -2,8 +2,8 @@
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-  margin-top: 50px;
-  margin-right: 50px;
+  margin: 30px auto;
+  max-width: 600px;
 }
 
 .Weather .submit-button {
@@ -35,7 +35,8 @@
   list-style: none;
 }
 .Weather .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: black;
+  opacity: 0.78;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -71,8 +72,6 @@
   padding-top: 7px;
 }
 
-
-
 .Weather .weather-forecast-temperature {
   text-align: center;
   color: rgb(135, 135, 135);
@@ -82,16 +81,11 @@
   line-height: 15px;
   white-space: nowrap;
 }
-.forecast{
+.Forecast{
   text-align: center;
 }
 .forecast-temp{
   opacity: 0.5;
-}
-
-.source {
-  padding: 4px;
-  margin-top: 20px;
 }
 .name-link {
   color: palevioletred;
@@ -128,19 +122,12 @@
   text-decoration: none;
 }
 
-@media (min-width: 800px) {
-  .Weather {
-    max-width: 50%;
-  }
- }
-
  @media (max-width: 600px) {
-  .forecast, .Weather .cities-top-container {
+  .Forecast, .Weather .cities-top-container {
     display: none;
   }
   .Weather .submit-button, .Weather .current-button{
-    padding: 2px;
-    margin: 4px;
+    margin-top: 10px;
   }
   h1 {
     font-size: 20pt;
