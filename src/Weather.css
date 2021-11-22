@@ -1,0 +1,134 @@
+.Weather {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.Weather .submit-button {
+  background: #CBE0FF;
+  border: 1.5px solid black;
+  border-radius: 4px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.Weather .current-button {
+  background: rgb(252, 218, 133);
+  border: 1.5px solid black;
+  border-radius: 4px;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.Weather .overview {
+  margin-bottom: 20px;
+}
+.Weather .description-list {
+  list-style: none;
+  padding: 0;
+}
+.Weather li {
+  list-style: none;
+}
+.Weather .weather-temperature strong {
+  color: black;
+  opacity: 0.78;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.Weather .weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.Weather .weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.Weather .weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.Weather .weather-forecast {
+  margin-top: 10px;
+}
+
+.Weather .weather-forecast h3 {
+  color: rgb(186, 186, 186);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.Weather .weather-forecast-temperature {
+  text-align: center;
+  color: rgb(135, 135, 135);
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
+.Forecast{
+  text-align: center;
+}
+.forecast-temp{
+  opacity: 0.5;
+}
+.name-link {
+  color: palevioletred;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.name-link:hover {
+  color: rgb(31, 212, 212);
+  font-weight: bolder;
+  text-decoration: none;
+}
+.website-link {
+  color: rgb(31, 212, 212);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.website-link:hover {
+  color: palevioletred;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.open-source-link {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.open-source-link:hover {
+  color: grey;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+ @media (max-width: 600px) {
+  .Forecast, .Weather .cities-top-container {
+    display: none;
+  }
+  .Weather .submit-button, .Weather .current-button{
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 20pt;
+  }
+ }
