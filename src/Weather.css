@@ -16,7 +16,7 @@
   padding-right: 10px;
 }
 .Weather .current-button {
-  background: rgb(252, 218, 133);
+  background: rgb(31, 212, 212);
   border: 2px solid black;
   border-radius: 4px;
   padding: 6px;
@@ -89,7 +89,7 @@
 }
 .Forecast{
   text-align: center;
-  background: #dadde1;
+  background: rgb(187, 252, 252);
   border-radius: 4px;
   padding: 4px;
   display: flex;
