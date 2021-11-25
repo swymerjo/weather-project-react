@@ -78,6 +78,20 @@ export default function Forecast(){
                 5°
             </p>
             </div>
+            <div className="col-sm-2">
+            <p>
+                Weds
+            </p>
+           <ReactAnimatedWeather
+            icon="SNOW"
+            color="black"
+            size={50}
+            animate={true}
+          />
+             <p className="forecast-temp">
+                2°
+            </p>
+            </div>
             </div>
         </div>
     )

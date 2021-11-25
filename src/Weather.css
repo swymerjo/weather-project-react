@@ -4,6 +4,7 @@
   border: 1px solid #dadde1;
   border-radius: 5px;
   max-width: 600px;
+  background: #fafbfd;
 }
 
 .Weather .submit-button {
@@ -88,6 +89,11 @@
 }
 .Forecast{
   text-align: center;
+  background: #dadde1;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  justify-content:space-between;
 }
 .forecast-temp{
   opacity: 0.5;
