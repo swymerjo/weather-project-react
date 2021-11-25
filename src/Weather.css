@@ -40,6 +40,7 @@
   padding-right: 10px;
   opacity: 0.78;
 }
+
 .Weather .weather-temperature strong {
   color: black;
   opacity: 0.78;
@@ -47,6 +48,7 @@
   line-height: 1;
   font-weight: 400;
   margin-left: 10px;
+  padding-right: 2px;
 }
 
 .Weather .weather-temperature .units {
@@ -55,14 +57,9 @@
   top: -34px;
 }
 
-.Weather .weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.Weather .weather-temperature .active:hover {
-  text-decoration: none;
-}
+.humidity-wind{
+  float: right;
+   }
 
 .Weather .weather-forecast {
   margin-top: 10px;
@@ -147,12 +144,15 @@ margin-bottom: 5px;
   .Weather .form-control {
     margin-bottom: 10px;
   }
+  .Weather .temperature-wrap {
+    background: rgb(187, 252, 252);
+    border-radius: 4px;
+    padding: 4px;
+  }
 
  .humidity-wind{
-display: none;
+padding-top: 4px;
+float: right;
  }
   
-  h1 {
-    float: left;
-  }
  }

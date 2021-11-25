@@ -7,3 +7,11 @@
 .App .footer{
     margin-top: 10px;
 }
+
+@media (max-width:770px) {
+    
+.App .footer {
+        font-size: 11pt;
+        text-align: center;
+      }
+}
