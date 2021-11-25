@@ -30,6 +30,7 @@
 .Weather .description-list {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 .Weather li {
   list-style: none;
@@ -123,13 +124,18 @@
 }
 
  @media (max-width: 600px) {
-  .Forecast, .Weather .cities-top-container {
+  .Forecast {
     display: none;
   }
   .Weather .submit-button, .Weather .current-button{
     margin-top: 10px;
   }
+
+ .humidity-wind{
+display: none;
+ }
+  
   h1 {
-    font-size: 20pt;
+    float: left;
   }
  }
