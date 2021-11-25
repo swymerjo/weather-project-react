@@ -42,7 +42,7 @@ const [city, setCity] = useState(props.defaultCity);
     <div className="Weather shadow">
       <form className="mb-4" onSubmit={handleSubmit}>
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-8">
             <input
               type="search"
               placeholder="Type a city.."
@@ -52,7 +52,7 @@ const [city, setCity] = useState(props.defaultCity);
               onChange={handleCityChange}
             />
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-4">
            <button className= "submit-button shadow w-20">
                Submit
            </button>

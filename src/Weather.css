@@ -133,12 +133,19 @@
   text-decoration: none;
 }
 
- @media (max-width: 600px) {
+ @media (max-width: 770px) {
   .Forecast {
     display: none;
   }
   .Weather .submit-button, .Weather .current-button{
-    margin-top: 10px;
+    margin-left: 0;
+  }
+  .Weather .submit-button {
+margin-right: 10px;
+margin-bottom: 5px;
+  }
+  .Weather .form-control {
+    margin-bottom: 10px;
   }
 
  .humidity-wind{
