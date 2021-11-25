@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 import './Weather.css';
 import Forecast from "./Forecast";
+import FormattedDate from "./FormattedDate";
 import ReactAnimatedWeather from 'react-animated-weather';
 
 export default function Weather(props) {
@@ -18,13 +19,13 @@ export default function Weather(props) {
         response.data.weather[0].icon
       }@2x.png`,
       description: response.data.weather[0].description,
-      date: ""
+      date: new Date(response.data.dt*1000)
     });
   }
 
  if (weatherData.ready) {
   return (
-    <div class="app-outer">
+    <div className="app-outer">
     <div className="Weather shadow">
       <form className="mb-4">
         <div className="row">
@@ -48,10 +49,12 @@ export default function Weather(props) {
         </div>
       </form>
       <div className="overview">
-        <h1>{weatherData.city}</h1>
+        <h1>{props.defaultCity}</h1>
         <ul className="description-list">
-          <li>Last updated: {weatherData.date}</li>
-          <li class="text-capitalize">{weatherData.description}</li>
+          <li>
+            <FormattedDate date= {weatherData.date}/>
+          </li>
+          <li className="text-capitalize">{weatherData.description}</li>
         </ul>
       </div>
       <div className="row">
@@ -65,7 +68,7 @@ export default function Weather(props) {
         />
               <strong>{Math.round(weatherData.temperature)}</strong>
               <span className="units">
-                <a class="text-decoration-none" href="/">°C</a> | <a class="text-decoration-none" href="/">°F</a>
+                <a className="text-decoration-none" href="/">°C</a> | <a className="text-decoration-none" href="/">°F</a>
               </span>
           </div>
         </div>
