@@ -35,6 +35,10 @@
 .Weather li {
   list-style: none;
 }
+.Weather canvas{
+  padding-right: 10px;
+  opacity: 0.78;
+}
 .Weather .weather-temperature strong {
   color: black;
   opacity: 0.78;
