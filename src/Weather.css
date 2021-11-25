@@ -61,29 +61,6 @@
   float: right;
    }
 
-.Weather .weather-forecast {
-  margin-top: 10px;
-}
-
-.Weather .weather-forecast h3 {
-  color: rgb(186, 186, 186);
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  height: 15px;
-  line-height: 15px;
-  padding-top: 7px;
-}
-
-.Weather .weather-forecast-temperature {
-  text-align: center;
-  color: rgb(135, 135, 135);
-  font-size: 13px;
-  font-weight: 400;
-  height: auto;
-  line-height: 15px;
-  white-space: nowrap;
-}
 .Forecast{
   text-align: center;
   background: rgb(187, 252, 252);
