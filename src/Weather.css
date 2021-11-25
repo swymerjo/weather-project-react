@@ -1,5 +1,5 @@
 .Weather {
-  font-family: arial, sans-serif;
+  font-family: "Indie Flower", cursive;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
@@ -7,8 +7,8 @@
 }
 
 .Weather .submit-button {
-  background: #CBE0FF;
-  border: 1.5px solid black;
+  background: palevioletred;
+  border: 2px solid black;
   border-radius: 4px;
   padding: 6px;
   padding-left: 10px;
@@ -16,7 +16,7 @@
 }
 .Weather .current-button {
   background: rgb(252, 218, 133);
-  border: 1.5px solid black;
+  border: 2px solid black;
   border-radius: 4px;
   padding: 6px;
   padding-left: 10px;

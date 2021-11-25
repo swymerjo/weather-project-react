@@ -12,7 +12,7 @@ export default function Forecast(){
             </p>
            <ReactAnimatedWeather
             icon="PARTLY_CLOUDY_DAY"
-            color="rgb(252, 218, 133)"
+            color="black"
             size={50}
             animate={true}
           />
@@ -26,7 +26,7 @@ export default function Forecast(){
             </p>
            <ReactAnimatedWeather
             icon="RAIN"
-            color="#529AFF"
+            color="black"
             size={50}
             animate={true}
           />
@@ -40,7 +40,7 @@ export default function Forecast(){
             </p>
            <ReactAnimatedWeather
             icon="RAIN"
-            color="#529AFF"
+            color="black"
             size={50}
             animate={true}
           />
@@ -69,7 +69,7 @@ export default function Forecast(){
             <div>
           <ReactAnimatedWeather
             icon="FOG"
-            color="grey"
+            color="black"
             size={50}
             animate={true}
           />
