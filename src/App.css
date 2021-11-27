@@ -8,6 +8,41 @@
     margin-top: 10px;
 }
 
+.App .name-link {
+    color: palevioletred;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .App .name-link:hover {
+    color: rgb(31, 212, 212);
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  .App .website-link {
+    color: rgb(31, 212, 212);
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .App .website-link:hover {
+    color: palevioletred;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .App .open-source-link {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .App .open-source-link:hover {
+    color: grey;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
 @media (max-width:770px) {
     
 .App .footer {

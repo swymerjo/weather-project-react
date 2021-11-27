@@ -51,66 +51,25 @@
   padding-right: 2px;
 }
 
+.Weather .temperature-wrap {
+  background: rgb(250, 165, 193);
+  border-radius: 4px;
+  padding: 4px;
+  margin: 1px;
+}
+
 .Weather .weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -34px;
 }
 
-.humidity-wind{
+.Weather .humidity-wind{
   float: right;
    }
 
-.Forecast{
-  text-align: center;
-  background: rgb(187, 252, 252);
-  border-radius: 4px;
-  padding: 4px;
-  display: flex;
-  justify-content:space-evenly;
-}
-.forecast-temp{
-  opacity: 0.5;
-}
-.name-link {
-  color: palevioletred;
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.name-link:hover {
-  color: rgb(31, 212, 212);
-  font-weight: bolder;
-  text-decoration: none;
-}
-.website-link {
-  color: rgb(31, 212, 212);
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.website-link:hover {
-  color: palevioletred;
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.open-source-link {
-  color: black;
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.open-source-link:hover {
-  color: grey;
-  font-weight: bolder;
-  text-decoration: none;
-}
 
  @media (max-width: 770px) {
-  .Forecast {
-    display: none;
-  }
   .Weather .submit-button, .Weather .current-button{
     margin-left: 0;
   }
@@ -121,13 +80,7 @@ margin-bottom: 5px;
   .Weather .form-control {
     margin-bottom: 10px;
   }
-  .Weather .temperature-wrap {
-    background: rgb(187, 252, 252);
-    border-radius: 4px;
-    padding: 4px;
-  }
-
- .humidity-wind{
+.Weather .humidity-wind{
 padding-top: 4px;
 float: right;
  }

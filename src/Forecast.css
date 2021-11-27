@@ -1,0 +1,20 @@
+.Forecast{
+  text-align: center;
+    background: rgb(187, 252, 252);
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 2px;
+  }
+  .Forecast .forecast-temp-max{
+  font-weight: bold;
+  }
+ .Forecast .forecast-temp-min{
+    padding-left: 6px;
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 770px) {
+    .Forecast {
+      display: none;
+    }
+    }

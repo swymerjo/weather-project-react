@@ -1,98 +1,48 @@
-import React from "react";
-import './Weather.css';
-import ReactAnimatedWeather from 'react-animated-weather';
+import axios from "axios";
+import React, {useState, useEffect} from "react";
+import './Forecast.css';
+import WeatherForecastDay from "./WeatherForecastDay";
 
-export default function Forecast(){
+export default function Forecast(props){
+    let [loaded, setLoaded] = useState(false);
+    let [forecast, setForecast] = useState(null);
+
+    useEffect(() => {
+        setLoaded(false);
+    } , [props.coordinates]);
+   
+    function handleResponse(response){
+    setForecast(response.data.daily);
+    setLoaded(true);
+    }
+
+if (loaded) {
     return(
-        <div className="Forecast mt-4">
+        <div className="Forecast">
             <div className="row">
-            <div className="col-sm-2">
-            <p>
-                Fri
-            </p>
-           <ReactAnimatedWeather
-            icon="PARTLY_CLOUDY_DAY"
-            color="black"
-            size={50}
-            animate={true}
-          />
-             <p className="forecast-temp">
-                11°
-            </p>
-            </div>
-            <div className="col-sm-2">
-            <p>
-                Sat
-            </p>
-           <ReactAnimatedWeather
-            icon="RAIN"
-            color="black"
-            size={50}
-            animate={true}
-          />
-             <p className="forecast-temp">
-                5°
-            </p>
-            </div>
-            <div className="col-sm-2">
-            <p>
-                Sun
-            </p>
-           <ReactAnimatedWeather
-            icon="RAIN"
-            color="black"
-            size={50}
-            animate={true}
-          />
-             <p className="forecast-temp">
-                8°
-            </p>
-            </div>
-            <div className="col-sm-2">
-            <p>
-                Mon
-            </p>
-           <ReactAnimatedWeather
-            icon="SNOW"
-            color="black"
-            size={50}
-            animate={true}
-          />
-             <p className="forecast-temp">
-                2°
-            </p>
-            </div>
-            <div className="col-sm-2">
-            <p>
-                Tues
-            </p>
-            <div>
-          <ReactAnimatedWeather
-            icon="FOG"
-            color="black"
-            size={50}
-            animate={true}
-          />
+            {forecast.map(function(dailyForecast, index) {
+                if (index < 6){
+                return (
+                    <div className="col-sm-2" key={index}>
+                    <WeatherForecastDay data={dailyForecast}/>
+                    </div>
+                );
+                } else {
+                    return null;
+                }
+            })}    
         </div>
-             <p className="forecast-temp">
-                5°
-            </p>
-            </div>
-            <div className="col-sm-2">
-            <p>
-                Weds
-            </p>
-           <ReactAnimatedWeather
-            icon="SNOW"
-            color="black"
-            size={50}
-            animate={true}
-          />
-             <p className="forecast-temp">
-                2°
-            </p>
-            </div>
-            </div>
         </div>
     )
+} else {
+    let longitude = props.coordinates.lon;
+    let latitude = props.coordinates.lat;
+    let apiKey ="96c6ec35768d7fb6accd0167701b703c";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(handleResponse)
+    
+    return null;
+
+}
 }
