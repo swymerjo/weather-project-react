@@ -8,7 +8,7 @@
 }
 
 .Weather .submit-button {
-  background: palevioletred;
+  background: rgb(250, 165, 193);
   border: 2px solid black;
   border-radius: 4px;
   padding: 6px;
@@ -16,7 +16,7 @@
   padding-right: 10px;
 }
 .Weather .current-button {
-  background: rgb(31, 212, 212);
+  background: rgb(187, 252, 252);
   border: 2px solid black;
   border-radius: 4px;
   padding: 6px;
