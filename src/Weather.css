@@ -81,6 +81,9 @@ margin-bottom: 5px;
     margin-bottom: 10px;
   }
  
+  .Weather .humidity-wind {
+    column-width: 30px;
+  }
 
   
  }
