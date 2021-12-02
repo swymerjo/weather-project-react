@@ -54,11 +54,8 @@ const [city, setCity] = useState(props.defaultCity);
             />
           </div>
           <div className="col-sm-4">
-           <button className= "submit-button shadow w-20">
+           <button className= "submit-button shadow">
                Submit
-           </button>
-           <button className= "current-button shadow w-20">
-               Current
            </button>
           </div>
         </div>
