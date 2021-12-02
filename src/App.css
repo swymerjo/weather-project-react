@@ -1,6 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
 
-
 .App {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 600px;
@@ -13,6 +12,11 @@
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
+}
+.App .footer-wrap{
+  background: #2F59BB;
+  border-radius: 4px;
+  color: white
 }
 
 .App .name-link {
@@ -39,13 +43,13 @@
   }
   
   .App .open-source-link {
-    color: black;
+    color: gold;
     font-weight: bolder;
     text-decoration: none;
   }
   
   .App .open-source-link:hover {
-    color: grey;
+    opacity: 0.5;
     font-weight: bolder;
     text-decoration: none;
   }
@@ -54,6 +58,7 @@
   margin-right: 10%;
   font-family: "Pokemon";
 }
+
 @media (max-width:770px) {
     
 .App .footer {
