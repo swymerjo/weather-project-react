@@ -16,7 +16,7 @@
   color: #F2C102;
   -webkit-text-stroke: 1px black;
 }
-.Weather .city-name{
+.city-name{
  -webkit-text-stroke: 1px white;
   color: black;
 }
