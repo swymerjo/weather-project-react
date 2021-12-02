@@ -56,7 +56,7 @@
 .App .icon-description{
   margin-left: 10%;
   margin-right: 10%;
-  font-family: "Pokemon";
+  font-family: 'Pokemon Solid', sans-serif;
 }
 
 @media (max-width:770px) {
