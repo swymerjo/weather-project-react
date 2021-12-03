@@ -18,8 +18,8 @@ export default function Forecast(props){
 
 if (loaded) {
     return(
-        <div className="Forecast">
-            <div className="row">
+        <div className="">
+            <div className="row Forecast">
             {forecast.map(function(dailyForecast, index) {
                 if (index < 5){
                 return (

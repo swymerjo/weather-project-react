@@ -39,7 +39,7 @@ const [city, setCity] = useState(props.defaultCity);
 
  if (weatherData.ready) {
   return (
-    <div className="app-outer">
+    <div className="">
     <div className="Weather shadow">
       <form className="mb-4" onSubmit={handleSubmit}>
         <div className="row">

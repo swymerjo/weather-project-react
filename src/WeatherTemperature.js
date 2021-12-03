@@ -17,7 +17,7 @@ if (unit ==="celsius") {
     return (
         <span>
              <strong>{Math.round(props.celsius)}</strong>
-              <span className="units ps-1">
+              <span className="units">
                 °C | <a className="text-decoration-none" href="/" onClick={showFahrenheit}>°F</a>
               </span>
         </span>
